@@ -1,0 +1,23 @@
+{
+  "name": "individualproject",
+  "version": "1.0.0",
+  "description": "My first individual Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AbdullahDarsot/IndividualProject.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AbdullahDarsot/IndividualProject/issues"
+  },
+  "homepage": "https://github.com/AbdullahDarsot/IndividualProject#readme",
+  "devDependencies": {
+    "jest": "^27.3.1"
+  }
+}

@@ -35,4 +35,15 @@ class FisherMan {
 const Mark = new FisherMan('Mark', 35, 'Male', 7)
 const Jenny = new FisherMan('Jenny', 25, 'Female', 7)
 
-console.log()
+
+module.exports = {
+    Fish,
+        Tunna,
+        Shark,
+    Ocean,
+        Pacific,
+        Antartic,
+    FisherMan,
+        Mark,
+        Jenny
+}
