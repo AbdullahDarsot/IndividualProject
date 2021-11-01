@@ -15,12 +15,13 @@ test('if Ocean name is Pacific', () => { // test the age is above a certain numb
 })
 
 test('if Fisherman name is Jenny', () => { // test the age is above a certain number
-    expect(index.Jenny.name).toBe('Jenny')
+    expect (index.Jenny.name).toBe('Jenny')
 })
 
-
+/*
 test('if Jenny strength increases after training', () => {
     index.Jenny.strength = 6
     index.Jenny.gym()
     expect(index.Jenny.speed).toBe(7)
 })
+*/

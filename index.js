@@ -33,9 +33,11 @@ class FisherMan {
         this.strength = strength;
     }
 
+    /*
     gym(){
         this.strength ++;
     }
+    */
 }
 
 const Mark = new FisherMan('Mark', 35, 'Male', 7)
