@@ -41,7 +41,7 @@ My project contains 3 classes:
 1. once a fisherman trains their strength increase by 1
 ### practise 
 1. the more they practise the more experience they will gain
-### FishTime 
+#### FishTime 
 1. the more time they spend fishing they higher the number of catches will be
 ### year 
 1. the year feature looks at every year that passes. once the year method is run the age will increase by 1 as it would on your birthday.
