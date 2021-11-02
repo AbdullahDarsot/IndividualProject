@@ -8,6 +8,21 @@ class Fish {
         this.age = age;
         this.tail = true;
     }
+
+    train(){
+        this.speed +=10;
+        this.strength-=10;
+    }
+
+    sleep(){
+        this.strength +=5;
+    }
+
+    year(){
+        this.age++;
+    }
+
+
 }
 
 const Tunna = new Fish ('Tunna', 7, 9, 15)
@@ -20,40 +35,58 @@ class Ocean {
         this.FishLevel = FishLevel;
         this.DangerLevel = DangerLevel;
     }
+
+    danger(){
+        this.DangerLevel+=10;
+    }
+
+    weather(){
+        this.color ='green';
+    }
+
+    spwan(){
+        this.FishLevel +=5;
+    }
+
 }
 
 const Pacific = new Ocean('Pacific', 'Blue', 8, 9)
 const Antartic = new Ocean('Antartic', 'Blue / Grey', 6, 10)
 
 class FisherMan {
-    constructor(name, age, gender, strength) {
+    constructor(name, age, gender, strength, experience, numberOfCatches) {
         this.name = name;
         this.age = age;
         this.gender = gender;
         this.strength = strength;
+        this.experience = experience;
+        this.numberOfCatches = numberOfCatches;
     }
 
-    /*
-    gym(){
+    
+    train(){
         this.strength ++;
     }
-    */
-}
 
-const Mark = new FisherMan('Mark', 35, 'Male', 7)
-const Jenny = new FisherMan('Jenny', 25, 'Female', 7)
 
-/*
-function myFirstFunction (FisherManStrength) {
-    if(FisherManStrength <5) {
-        console.log('You Need to train')
-    } else{
-        console.log('Keep up the training')
+    practise(){
+        this.experience ++;
     }
+
+    fishTime(){
+        this.numberOfCatches ++;
+    }
+
+    year(){
+        this.age ++;
+    }
+   
 }
 
-myFirstFunction(7)
-*/
+const Mark = new FisherMan('Mark', 35, 'Male', 7, 5)
+const Jenny = new FisherMan('Jenny', 25, 'Female', 7, 10)
+
+
 module.exports = {
     Fish,
         Tunna,
