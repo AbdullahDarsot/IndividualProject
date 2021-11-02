@@ -1,5 +1,7 @@
 const index = require('./index')
 
+const Ocean = index.Ocean
+const Fish = index.Fish
 const FisherMan = index.FisherMan
 
 test('if Fisherman name is Jenny', () => { 

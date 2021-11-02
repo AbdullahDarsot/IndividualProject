@@ -1,5 +1,7 @@
 const index = require('./index')
 const Ocean = index.Ocean
+const Fish = index.Fish
+const FisherMan = index.FisherMan
 
 
 test('if Ocean name is Pacific', () => { 
@@ -34,4 +36,11 @@ describe('tests all the methods within the Ocean class', () => {
         index.Antartic.spwan()
         expect(index.Antartic.FishLevel).toBe(10)
     })
+
+    test('if boat level increases once fish level increases', () => {
+        index.Antartic.numberOfBoats = 5
+        index.Antartic.numberOfFish()
+        expect(index.Antartic.numberOfBoats).toBe(10)
+    })
 })
+

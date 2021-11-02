@@ -1,7 +1,9 @@
 
 const index = require('./index')
 
+const Ocean = index.Ocean
 const Fish = index.Fish
+const FisherMan = index.FisherMan
 
 
 test('if Tunna name is Tunna', () => { 
@@ -37,5 +39,11 @@ describe('tests all the methods within the Fish class', () => {
         index.Shark.age = 10
         index.Shark.year()
         expect(index.Shark.age).toBe(11)
+    })
+
+    test('if Shark agility increases', () => {
+        index.Shark.agility = 1
+        index.Shark.slalom()
+        expect(index.Shark.agility).toBe(4)
     })
 })

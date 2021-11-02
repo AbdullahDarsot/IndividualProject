@@ -1,12 +1,13 @@
 //first commit
 
 class Fish {
-    constructor(name, strength, speed, age) {
+    constructor(name, strength, speed, age, agility) {
         this.name = name;
         this.strength = strength;
         this.speed = speed;
         this.age = age;
         this.tail = true;
+        this.agility = agility;
     }
 
     train(){
@@ -22,18 +23,22 @@ class Fish {
         this.age++;
     }
 
+    slalom(){
+        this.agility+=3;
+    }
 
 }
 
-const Tunna = new Fish ('Tunna', 7, 9, 15)
-const Shark = new Fish ('Shark', 10, 8, 20)
+const Tunna = new Fish ('Tunna', 7, 9, 15, 10)
+const Shark = new Fish ('Shark', 10, 8, 20, 15)
 
 class Ocean {
-    constructor(name, color, FishLevel, DangerLevel) {
+    constructor(name, color, FishLevel, DangerLevel, numberOfBoats) {
         this.name = name;
         this.color = color;
         this.FishLevel = FishLevel;
         this.DangerLevel = DangerLevel;
+        this.numberOfBoats = numberOfBoats;
     }
 
     danger(){
@@ -48,10 +53,14 @@ class Ocean {
         this.FishLevel +=5;
     }
 
+    numberOfFish(){
+        this.numberOfBoats+=5;
+    }
+
 }
 
-const Pacific = new Ocean('Pacific', 'Blue', 8, 9)
-const Antartic = new Ocean('Antartic', 'Blue / Grey', 6, 10)
+const Pacific = new Ocean('Pacific', 'Blue', 8, 9, 15)
+const Antartic = new Ocean('Antartic', 'Blue / Grey', 6, 10, 11)
 
 class FisherMan {
     constructor(name, age, gender, strength, experience, numberOfCatches) {
