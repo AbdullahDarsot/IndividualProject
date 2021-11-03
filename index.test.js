@@ -43,7 +43,7 @@ describe('tests all the methods within the Fish class', () => {
 
     test('if Shark agility increases', () => {
         index.Shark.agility = 1
-        index.Shark.slalom()
+        index.Shark.train2()
         expect(index.Shark.agility).toBe(4)
     })
 })

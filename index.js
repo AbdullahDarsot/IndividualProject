@@ -23,7 +23,7 @@ class Fish {
         this.age++;
     }
 
-    slalom(){
+    train2(){
         this.agility+=3;
     }
 
@@ -31,6 +31,7 @@ class Fish {
 
 const Tunna = new Fish ('Tunna', 7, 9, 15, 10)
 const Shark = new Fish ('Shark', 10, 8, 20, 15)
+
 
 class Ocean {
     constructor(name, color, FishLevel, DangerLevel, numberOfBoats) {
@@ -61,6 +62,7 @@ class Ocean {
 
 const Pacific = new Ocean('Pacific', 'Blue', 8, 9, 15)
 const Antartic = new Ocean('Antartic', 'Blue / Grey', 6, 10, 11)
+
 
 class FisherMan {
     constructor(name, age, gender, strength, experience, numberOfCatches) {
