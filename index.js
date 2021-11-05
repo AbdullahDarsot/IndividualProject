@@ -1,13 +1,14 @@
 //first commit
 
 class Fish {
-    constructor(name, strength, speed, age, agility) {
+    constructor(name, strength, speed, age, agility, alive) {
         this.name = name;
         this.strength = strength;
         this.speed = speed;
         this.age = age;
         this.tail = true;
         this.agility = agility;
+        this.alive = true;
     }
 
     train(){
@@ -25,6 +26,10 @@ class Fish {
 
     train2(){
         this.agility+=3;
+    }
+
+    eat(){
+        this.alive = false;
     }
 
 }

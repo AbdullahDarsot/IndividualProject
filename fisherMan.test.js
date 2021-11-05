@@ -38,3 +38,4 @@ describe('tests all the methods within the FisherMan class', () =>{
         expect(index.Mark.age).toBe(30)
     })
 })
+

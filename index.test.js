@@ -47,3 +47,10 @@ describe('tests all the methods within the Fish class', () => {
         expect(index.Shark.agility).toBe(4)
     })
 })
+
+test('if eat function is run fish dies', () =>{
+    index.Tunna.alive = true
+    index.Tunna.eat()
+    expect(index.Tunna.alive).toBe(false)
+    index.Tunna.alive = true
+})
